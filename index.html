@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eaf5ef">
+  <meta name="description" content="Cribados clínicos sencillos, visuales y fáciles de responder.">
+  <title>Envejecimiento saludable | Cribados clínicos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Inicio">
+      <span class="brand-mark">+</span>
+      <span>Cribados <strong>Saludables</strong></span>
+    </a>
+    <span class="topbar-note">Cuidar también es prevenir</span>
+  </header>
+
+  <main>
+    <section class="screen screen-home is-active" id="inicio" aria-labelledby="home-title">
+      <div class="home-hero">
+        <button class="cover-button" id="cover-button" type="button" aria-label="Entrar al cribado de fragilidad">
+          <span class="cover-ring"><img src="assets/images/portada-envejecimiento.png"
+              alt="Pareja de adultos mayores sonriendo con el mensaje Envejecimiento saludable"></span>
+        </button>
+        <div class="home-copy">
+          <p class="eyebrow">BIENESTAR · PREVENCIÓN · AUTONOMÍA</p>
+          <h1 id="home-title">Bienvenido a los<br><em>Cribados Clínicos</em></h1>
+          <p class="intro">Herramientas sencillas para acompañar el bienestar y la calidad de vida de las personas
+            mayores.</p>
+          <p class="doctor-credit">Atención y seguimiento: <strong> Dra. Silvia Aguilar
+              <br> Maestría en Gerontología social
+              <br> C.P. 3654015
+              <br> C.P. 11702051
+            </strong></p>
+          <p class="select-prompt">♡ Selecciona el cribado que deseas realizar</p>
+        </div>
+      </div>
+      <div class="screening-grid" aria-label="Selecciona un cribado clínico">
+        <article class="screening-card card-frail">
+          <div class="screening-icon"><img src="assets/images/iconos/frail.png"
+              alt="Persona adulta mayor, ilustración de fragilidad"></div>
+          <div class="screening-info">
+            <p class="card-kicker">CRIBADO CLÍNICO</p>
+            <h2>FRAIL</h2>
+            <p>fragilidad · Evalúa señales de fragilidad en el adulto mayor.</p><button class="card-button"
+              id="start-button" type="button">Acceder <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+        <article class="screening-card card-snaq">
+          <div class="screening-icon"><img src="assets/images/iconos/snaq.png"
+              alt="Frutas y verduras, ilustración de nutrición"></div>
+          <div class="screening-info">
+            <p class="card-kicker">NUTRICIÓN Y APETITO</p>
+            <h2>SNAQ</h2>
+            <p>Anorexia en el envejecimiento · Explora apetito y alimentación.</p><button class="card-button"
+              id="snaq-button" type="button">Acceder <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+        <article class="screening-card card-sarc">
+          <div class="screening-icon"><img src="assets/images/iconos/sarc-f.png"
+              alt="Persona mostrando sus músculos, ilustración de fuerza"></div>
+          <div class="screening-info">
+            <p class="card-kicker">FUERZA Y MOVILIDAD</p>
+            <h2>SARC-F</h2>
+            <p>Sarcopenia · Orientado a identificar posibles dificultades de fuerza y movilidad.</p><button
+              class="card-button" id="sarcf-button" type="button">Acceder <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+        <article class="screening-card card-rcs">
+          <div class="screening-icon"><img src="assets/images/iconos/rcs.png"
+              alt="Cerebro, ilustración de memoria y cognición"></div>
+          <div class="screening-info">
+            <p class="card-kicker">MEMORIA Y COGNICIÓN</p>
+            <h2>RCS</h2>
+            <p>Deterioro cognitivo · Cribado cognitivo rápido para personas mayores.</p><button class="card-button"
+              id="rcs-button" type="button">Acceder <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+      </div>
+      <div class="home-benefits">
+        <div><span aria-hidden="true">✓</span><strong>Fácil de usar</strong><small>Preguntas claras y sencillas</small>
+        </div>
+        <div><span aria-hidden="true">♡</span><strong>Con calidez</strong><small>Pensado para personas mayores</small>
+        </div>
+        <div><span aria-hidden="true">▣</span><strong>Multidispositivo</strong><small>Computadora, tableta o
+            celular</small></div>
+      </div>
+    </section>
+    <section class="screen placeholder-screen" id="pendiente" hidden aria-labelledby="placeholder-title">
+      <button class="back-button" id="placeholder-back" type="button"><span aria-hidden="true">←</span> Volver a los
+        cribados</button>
+      <div class="placeholder-card">
+        <div class="placeholder-icon" id="placeholder-icon" aria-hidden="true">♡</div>
+        <p class="eyebrow">PRÓXIMAMENTE</p>
+        <h2 id="placeholder-title">Estamos preparando este cribado</h2>
+        <p id="placeholder-description">Este cribado estará disponible aquí cuando se integre su formulario.</p>
+        <p class="placeholder-note">Ya puedes acceder a FRAIL, SNAQ, SARC-F y RCS desde la portada.</p><button
+          class="primary-button" id="placeholder-home" type="button">Volver a la portada <span
+            aria-hidden="true">→</span></button>
+      </div>
+    </section>
+    <section class="screen screen-survey" id="cribado" aria-labelledby="survey-title" hidden>
+      <div class="survey-heading">
+        <button class="back-button" id="back-button" type="button"><span aria-hidden="true">←</span> Inicio</button>
+        <p class="eyebrow" id="survey-eyebrow">CRIBADO CLÍNICO DE PERSONAS MAYORES</p>
+        <h2 id="survey-title">Escala <em>FRAIL</em></h2>
+        <p id="survey-instructions">Responde las cinco preguntas pensando en cómo te has sentido recientemente. No hay
+          respuestas buenas ni malas.</p>
+      </div>
+
+      <div class="progress-area" aria-live="polite">
+        <div class="progress-label"><span id="progress-text">Pregunta 1 de 5</span><span
+            id="progress-percent">20%</span></div>
+        <div class="progress-track">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+      </div>
+
+      <form id="frail-form">
+        <div id="question-container" class="question-list"></div>
+        <div class="form-actions">
+          <button class="secondary-button" id="previous-button" type="button" disabled>Anterior</button>
+          <button class="primary-button" id="next-button" type="button">Siguiente <span
+              aria-hidden="true">→</span></button>
+        </div>
+        <p class="form-error" id="form-error" role="alert" hidden>Selecciona una respuesta para continuar.</p>
+      </form>
+
+      <section class="result-card" id="result-card" hidden aria-live="polite">
+        <div class="result-symbol" id="result-symbol">♡</div>
+        <p class="eyebrow">RESULTADO ORIENTATIVO</p>
+        <p class="print-doctor">Responsable de seguimiento: Dra. Silvia Aguilar
+          <br> Maestría en Gerontología social
+          <br> C.P. 3654015
+          <br> C.P. 11702051
+        </p>
+        <h2 id="result-title">Tu resultado</h2>
+        <p class="result-score" id="result-score"></p>
+        <p id="result-description"></p>
+        <p class="medical-note">Este cuestionario es una herramienta de cribado y no sustituye una valoración médica.
+          Comparte el resultado con un profesional de salud, especialmente si tienes dificultades nuevas o que empeoran.
+        </p>
+        <div class="result-actions">
+          <button class="primary-button" id="print-button" type="button">Imprimir / Guardar PDF</button>
+          <button class="secondary-button" id="restart-button" type="button">Volver a responder</button>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>♡ Envejecer con bienestar también es cuidarse.</span>
+    <span>Cribados Saludables</span>
+  </footer>
+</body>
+
+</html>
